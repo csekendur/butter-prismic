@@ -1,8 +1,31 @@
+// Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+
+const scrollFunc = () => {
+
+    const scrollToTopButton = document.getElementById('js-top');
+    // Get the current scroll value
+    let y = window.scrollY;
+    
+    // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
+    if (y > 0) {
+      scrollToTopButton.className = "top-link show";
+    } else {
+      scrollToTopButton.className = "top-link hide";
+    }
+  };
+
+  window.addEventListener("scroll", scrollFunc);
+
 $(document).ready(function() {
   Weather.setApiKey("186a4121f9d2a98d277362cd4add0547");
   Weather.getCurrent("Queens", function(current) {
     var w = Weather.kelvinToFahrenheit(current.temperature());
     $(".weather").html(Math.round(w) + "&#176; F");
+  });
+
+  $("#js-top").on("click", function() {
+    $("body").animate( { scrollTop:0, scrollLeft:0 }, 1000 );
+    return false;
   });
 
   $(".popup-slider").on('beforeChange', scrollToTop);

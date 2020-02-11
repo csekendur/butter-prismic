@@ -51,3 +51,6 @@ block body
             .five-elevenths.grid__item.push--one-eleventh.medium-down.work-item
               .popup-image
                 img(src=slice.primary['image-2'].url)
+        when 'nextworkpage'
+            div(class="nextworkpage")
+                h5= document.data["work-subpage-title"][0].text
