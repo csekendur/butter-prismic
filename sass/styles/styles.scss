@@ -1088,16 +1088,15 @@ a {
     bottom: 0;
     right: 0;
     display: inline-flex;
-    
-      cursor: pointer;
-      align-items: center;
-      justify-content: center;
-      margin: 0 3em 3em 0;
-      border-radius: 50%;
-      padding: .25em;
-      width: 80px;
-      height: 80px;
-    background-color: #F8F8F8;
+    z-index: 110000;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    margin: 0 3em 3em 0;
+    border-radius: 50%;
+    width: 95px;
+    height: 95px;
+    background-color: #FFF;
     
     &.show {
       visibility: visible;
@@ -1110,17 +1109,12 @@ a {
     }
   
       svg {
-          fill: #000;
-          width: 24px;
-          height: 12px;
+        width: 95px;
+        height: 95px;
       }
   
       &:hover {
-          background-color: #E8E8E8;
-  
-          svg {
-              fill: #000000;
-          }
+        background-color: #E8E8E8;
       }
   }
   

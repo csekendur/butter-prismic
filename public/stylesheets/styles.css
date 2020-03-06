@@ -148,7 +148,6 @@ template {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: -webkit-box;
   display: flex;
   flex-wrap: wrap;
 }
@@ -184,7 +183,6 @@ template {
   text-align: left;
 }
 .grid--middle {
-  -webkit-box-align: center;
   align-items: center;
 }
 .grid--bottom > .grid__item {
@@ -1817,7 +1815,6 @@ template {
 }
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 .slick-track {
@@ -1892,7 +1889,6 @@ template {
   background: transparent;
   color: transparent;
   top: 50%;
-  -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   padding: 0;
   border: none;
@@ -2050,7 +2046,6 @@ h2 {
 }
 a {
   color: inherit;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 a:hover {
@@ -2063,11 +2058,8 @@ a:hover {
   opacity: 0.7;
 }
 .text {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   text-align: center;
   padding: 10px;
@@ -2103,7 +2095,6 @@ a:hover {
   grid-template-columns: repeat(16, 1fr);
   grid-auto-flow: row;
   position: relative;
-  -webkit-transition: opacity 1s;
   transition: opacity 1s;
   border-bottom: 2px solid black;
 }
@@ -2162,7 +2153,6 @@ a:hover {
   height: 100%;
   position: absolute;
   border-radius: 50%;
-  -webkit-perspective: 1000;
   perspective: 1000;
 }
 .dot-inner > div {
@@ -2179,7 +2169,6 @@ a:hover {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   opacity: 0;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .dot-inner:hover > div, .dot-inner:focus > div, .dot-inner:active > div {
@@ -2189,11 +2178,8 @@ a:hover {
   opacity: 1;
 }
 .content {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   text-align: center;
   padding: 10px;
@@ -2321,9 +2307,7 @@ a:hover {
   max-width: 105px;
 }
 .footer-desktop {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
   justify-content: space-between;
   flex-wrap: wrap;
   border-bottom: 2px solid black;
@@ -2394,9 +2378,7 @@ a:hover {
   font-size: 17px;
 }
 .footer-newsletter {
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
   justify-content: space-between;
   flex-wrap: wrap;
   font-family: 'Transcript Trial';
@@ -2412,7 +2394,6 @@ a:hover {
 }
 @media only screen and (max-width: 1199px) {
   .footer-newsletter {
-    -webkit-box-ordinal-group: 0;
     order: -1;
     width: 100%;
   }
@@ -2420,14 +2401,12 @@ a:hover {
 .footer-email form {
   border-bottom: 1px solid black;
   padding: 0 0 10px;
-  display: -webkit-box;
   display: flex;
 }
 .footer-email form input[type="email"] {
   outline: none;
   border: 0;
   width: 200px;
-  -webkit-box-flex: 1;
   flex: 1;
 }
 .footer-email form input[type="email"]::-webkit-input-placeholder {
@@ -2507,7 +2486,6 @@ a:hover {
   padding: 30px 0;
   box-sizing: border-box;
   opacity: 1;
-  -webkit-transition: opacity 1s;
   transition: opacity 1s;
   z-index: 1000;
 }
@@ -2515,7 +2493,6 @@ a:hover {
   opacity: 0;
   z-index: -1000;
   position: absolute;
-  -webkit-transition: opacity 0s;
   transition: opacity 0s;
   top: 0;
   bottom: 0;
@@ -2524,11 +2501,8 @@ a:hover {
 .popup-header {
   padding: 0 0 30px;
   width: 100%;
-  display: -webkit-box;
   display: flex;
-  -webkit-box-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
@@ -2548,7 +2522,6 @@ a:hover {
   .popup-header-text {
     position: absolute;
     left: 50%;
-    -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
   }
   .popup-header-text br {
@@ -2561,7 +2534,6 @@ a:hover {
 }
 @media only screen and (max-width: 1199px) {
   .popup-header-text {
-    -webkit-box-ordinal-group: 11;
     order: 10;
     width: 100%;
     padding: 30px 0 0;
@@ -2812,7 +2784,6 @@ a:hover {
   width: 100%;
   margin-bottom: 20px;
   box-sizing: border-box;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   cursor: pointer;
   margin-bottom: 30px;
@@ -2897,7 +2868,6 @@ a:hover {
 .slick-arrow {
   height: auto;
   top: auto;
-  -webkit-transform: none;
   transform: none;
 }
 .uppercase {
@@ -2911,7 +2881,6 @@ a {
   display: block;
   line-height: 1em;
   color: black;
-  -webkit-transition: none;
   transition: none;
 }
 .text a:hover {
@@ -2929,24 +2898,20 @@ a {
   margin-bottom: 80px;
 }
 .top-link {
-  -webkit-transition: all .25s ease-in-out;
   transition: all .25s ease-in-out;
   position: fixed;
   bottom: 0;
   right: 0;
-  display: -webkit-inline-box;
   display: inline-flex;
+  z-index: 110000;
   cursor: pointer;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   margin: 0 3em 3em 0;
   border-radius: 50%;
-  padding: .25em;
-  width: 80px;
-  height: 80px;
-  background-color: #F8F8F8;
+  width: 95px;
+  height: 95px;
+  background-color: #FFF;
 }
 .top-link.show {
   visibility: visible;
@@ -2957,15 +2922,11 @@ a {
   opacity: 0;
 }
 .top-link svg {
-  fill: #000;
-  width: 24px;
-  height: 12px;
+  width: 95px;
+  height: 95px;
 }
 .top-link:hover {
   background-color: #E8E8E8;
-}
-.top-link:hover svg {
-  fill: #000000;
 }
 .screen-reader-text {
   position: absolute;
