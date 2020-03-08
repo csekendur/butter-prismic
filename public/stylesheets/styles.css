@@ -2909,8 +2909,8 @@ a {
   justify-content: center;
   margin: 0 3em 3em 0;
   border-radius: 50%;
-  width: 95px;
-  height: 95px;
+  width: 65px;
+  height: 65px;
   background-color: #FFF;
 }
 .top-link.show {
@@ -2922,8 +2922,8 @@ a {
   opacity: 0;
 }
 .top-link svg {
-  width: 95px;
-  height: 95px;
+  width: 65px;
+  height: 65px;
 }
 .top-link:hover {
   background-color: #E8E8E8;
