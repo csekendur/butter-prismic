@@ -1,28 +1,34 @@
 mixin work(workSlices)
   each slice in workSlices
     case slice.slice_type
+      when 'video'
+        .grid.work-row
+          .nine-elevenths.grid__item.push--large--one-eleventh.medium-down--one-whole.work-item.hover-fade
+            div(style='padding:55% 0 0 0;position:relative;')
+              iframe(src=`https://player.vimeo.com/video/${slice.primary['video-embed'].video_id}?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&background=1` style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='')
+            script(src='https://player.vimeo.com/api/player.js')
       when 'single-column'
         .grid.work-row
-          a(href=`/work-subpage/${slice.primary['work-subpage-link'].uid}`)
-            .nine-elevenths.grid__item.push--large--one-eleventh.medium-down--one-whole.work-item.hover-fade
-              .popup-image
-                img(src=slice.primary.image.url)
-              .popup-news-item.down--one-twelfth
-                span= slice.primary.brand[0].text
-                span.popup-image-caption-right= slice.primary.services[0].text
+           a(href=`/work-subpage/${slice.primary['work-subpage-link'].uid}`)
+             .nine-elevenths.grid__item.push--large--one-eleventh.medium-down--one-whole.work-item.hover-fade
+               .popup-image
+                 img(class="lozad" data-src=slice.primary.image.url)
+               .popup-news-item.down--one-twelfth
+                  span= slice.primary.brand[0].text
+                  span.popup-image-caption-right= slice.primary.services[0].text
       when 'two-columns'
         .grid.work-row
           .four-elevenths.grid__item.push--large--one-eleventh.medium-down--one-whole.work-item.hover-fade
             a(href=`/work-subpage/${slice.primary['work-subpage-link-1'].uid}`)
               .popup-image
-                img(src=slice.primary['image-1'].url)
+                img(class="lozad" data-src=slice.primary['image-1'].url)
               .popup-news-item.down--one-twelfth
                 span= slice.primary['brand-1'][0].text
                 span.popup-image-caption-right= slice.primary['services-1'][0].text
           .four-elevenths.grid__item.push--large--one-eleventh.medium-down--one-whole.work-item.hover-fade
             a(href=`/work-subpage/${slice.primary['work-subpage-link-2'].uid}`)
               .popup-image
-                img(src=slice.primary['image-2'].url)
+                img(class="lozad" src=slice.primary['image-2'].url)
               .popup-news-item.down--one-twelfth
                 span= slice.primary['brand-2'][0].text
                 span.popup-image-caption-right= slice.primary['services-2'][0].text

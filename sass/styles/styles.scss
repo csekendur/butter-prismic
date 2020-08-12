@@ -11,25 +11,17 @@
 }
 
 @font-face {
-    font-family: 'Transcript Trial';
-    src: url('../fonts/transcript-bold.eot');
-    src: url('../fonts/transcript-bold.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/transcript-bold.woff2') format('woff2'),
-        url('../fonts/transcript-bold.woff') format('woff'),
-        url('../fonts/transcript-bold.ttf') format('truetype'),
-        url('../fonts/transcript-bold.svg#transcript-bold') format('svg');
+    font-family: 'Transcript';
+    src: url("../fonts/transcript-bold.eot");
+    src: url("../fonts/transcript-bold.eot?#iefix") format("embedded-opentype"), url("../fonts/transcript-bold.woff2") format("woff2"), url("../fonts/transcript-bold.woff") format("woff"), url("../fonts/transcript-bold.ttf") format("truetype"), url("../fonts/transcript-bold.svg#transcript-bold") format("svg");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Transcript Trial';
-    src: url('../fonts/transcript-regular.eot');
-    src: url('../fonts/transcript-regular.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/transcript-regular.woff2') format('woff2'),
-        url('../fonts/transcript-regular.woff') format('woff'),
-        url('../fonts/transcript-regular.ttf') format('truetype'),
-        url('../fonts/transcript-regular.svg#transcript-regular') format('svg');
+    font-family: 'Transcript';
+    src: url("../fonts/transcript-regular.eot");
+    src: url("../fonts/transcript-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/transcript-regular.woff2") format("woff2"), url("../fonts/transcript-regular.woff") format("woff"), url("../fonts/transcript-regular.ttf") format("truetype"), url("../fonts/transcript-regular.svg#transcript-regular") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -41,7 +33,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Transcript Trial';
+  font-family: 'Transcript';
   font-size: 30px;
   line-height: 1.2em;
   letter-spacing: 0.05em;
@@ -76,7 +68,7 @@ a {
   justify-content: center;
   text-align: center;
   padding: 10px;
-  font-family: 'Transcript Trial';
+  font-family: 'Transcript';
   font-size: 20px;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -217,40 +209,40 @@ a {
 }
 
 .content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 10px;
-  grid-column: 7 / 11;
-  grid-row: 4 / 6;
-
-  p {
-    font-family: 'GT Sectra Fine Trial';
-    font-size: 24px;
-    letter-spacing: 0.05em;
-    line-height: 1.26em;
-  }
-
-  @include media-query($medium) {
-    grid-column: 3 / 9;
-    grid-row: 2 / 4;
-  }
-
-  @include media-query($small) {
-    grid-column: 2 / 8;
-    grid-row: 2 / 4;
-  }
-
-  @include media-query($mobile) {
-    grid-column: 2 / 8;
-    grid-row: 3 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    grid-column: 7 / 11;
+    grid-row: 4 / 6;
 
     p {
-      font-size: 20px;
-      margin: 0;
+        font-family: 'Transcript';
+        font-size: 24px;
+        letter-spacing: 0.05em;
+        line-height: 1.26em;
     }
-  }
+
+    @include media-query($medium) {
+        grid-column: 3 / 9;
+        grid-row: 2 / 4;
+    }
+
+    @include media-query($small) {
+        grid-column: 2 / 8;
+        grid-row: 2 / 4;
+    }
+
+    @include media-query($mobile) {
+        grid-column: 2 / 8;
+        grid-row: 3 / 5;
+
+        p {
+            font-size: 20px;
+            margin: 0;
+        }
+    }
 }
 
 .services {
@@ -363,7 +355,7 @@ a {
 }
 
 .footer-strong {
-  font-family: 'Transcript Trial';
+  font-family: 'Transcript';
   font-weight: bold;
   font-size: 17px;
   line-height: 1.45em;
@@ -407,7 +399,7 @@ a {
   text-align: right;
 
   div {
-    font-family: 'Transcript Trial';
+    font-family: 'Transcript';
     font-size: 16px;
   }
 }
@@ -430,7 +422,7 @@ a {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  font-family: 'Transcript Trial';
+  font-family: 'Transcript';
 
   > div {
     padding: 0 15px;
@@ -482,7 +474,7 @@ a {
   }
 
   input {
-    font-family: 'Transcript Trial';
+    font-family: 'Transcript';
     font-size: 16px;
   }
 }
@@ -602,7 +594,7 @@ a {
   position: relative;
 
   h2 {
-    font-family: 'Transcript Trial';
+    font-family: 'Transcript';
     font-weight: bold;
     font-size: 20px;
     line-height: 1.45em;
@@ -677,7 +669,7 @@ a {
     }
 
     li {
-      font-family: 'Transcript Trial';
+      font-family: 'Transcript';
       font-size: 20px;
       line-height: 1.75em;
       text-transform: lowercase;
@@ -685,7 +677,7 @@ a {
   }
 
   h3 {
-      font-family: 'Transcript Trial';
+      font-family: 'Transcript';
       font-weight: bold;
       font-size: 15px;
       line-height: 1.2em;
@@ -756,7 +748,7 @@ a {
   }
 
   h1 {
-    font-family: 'Transcript Trial';
+    font-family: 'Transcript';
     font-weight: bold;
     font-size: 30px;
     line-height: 1.2em;
@@ -767,7 +759,7 @@ a {
   }
 
   h2 {
-    font-family: 'Transcript Trial';
+    font-family: 'Transcript';
     font-weight: bold;
     font-size: 15px;
     line-height: 1.45em;
@@ -777,9 +769,9 @@ a {
   }
 
   p {
-    font-family: 'Transcript Trial';
-    font-size: 20px;
-    line-height: 1.5em;
+    font-family: 'Transcript';
+    font-size: 18px;
+    line-height: 1.4em;
     margin-bottom: 22px;
     margin-top: 0px;
 
@@ -789,7 +781,7 @@ a {
   }
 
   .about-single p {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .grid__item {
@@ -821,7 +813,7 @@ a {
     }
 
     li {
-      font-family: 'Transcript Trial';
+      font-family: 'Transcript';
       font-size: 20px;
       line-height: 1.75em;
       text-transform: lowercase;
@@ -831,7 +823,7 @@ a {
 
 .popup-work-subpages {
   h3 {
-    font-family: 'Transcript Trial';
+    font-family: 'Transcript';
     font-weight: bold;
     font-size: 20px;
     line-height: 1.45em;
@@ -840,7 +832,7 @@ a {
   }
 
   p {
-    font-family: 'Transcript Trial';
+    font-family: 'Transcript';
     font-size: 16px;
     line-height: 1.5em;
     margin-bottom: 22px;
@@ -869,7 +861,7 @@ a {
   }
 
   .work-statement p {
-    font-family: 'Transcript Trial';
+    font-family: 'Transcript';
     font-weight: normal;
     font-size: 20px;
     line-height: 1.45em;
@@ -885,7 +877,7 @@ a {
 
   input, label, textarea, p {
     display: block;
-    font-family: 'Transcript Trial';
+    font-family: 'Transcript';
     font-size: 17px;
     line-height: 1.2em;
     letter-spacing: 0.03em;
@@ -982,7 +974,7 @@ a {
 
 .popup-news-item {
   h3 {
-    font-family: 'Transcript Trial';
+    font-family: 'Transcript';
     font-weight: bold;
     font-size: 17px;
     line-height: 1.45em;
@@ -992,7 +984,7 @@ a {
   }
 
   p, span {
-    font-family: 'Transcript Trial';
+    font-family: 'Transcript';
     font-size: 14px;
     line-height: 1.8em;
     letter-spacing: 0.03em;

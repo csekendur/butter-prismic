@@ -135,3 +135,16 @@ function closePopup() {
   $(".popup").addClass("hidden");
   window.location.hash = "";
 }
+
+
+//Lazy Loading
+$(document).ready(function () {
+  const observer = lozad();
+  observer.observe();
+});
+
+//Vimeo COntrol
+$(document).ready(function () {
+  var data = $("#440143844").contents();
+  console.log(data);
+});
