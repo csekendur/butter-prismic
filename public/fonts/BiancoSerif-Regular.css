@@ -1,0 +1,12 @@
+/* Webfont: BiancoSerif-Regular */@font-face {
+    font-family: 'BiancoSerif';
+    src: url('BiancoSerif-Regular.eot'); /* IE9 Compat Modes */
+    src: url('BiancoSerif-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('BiancoSerif-Regular.woff') format('woff'), /* Modern Browsers */
+         url('BiancoSerif-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('BiancoSerif-Regular.svg#BiancoSerif-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

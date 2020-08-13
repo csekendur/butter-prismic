@@ -26,6 +26,18 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'BiancoSerif';
+    src: url('../fonts/BiancoSerif-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/BiancoSerif-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/BiancoSerif-Regular.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/BiancoSerif-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/BiancoSerif-Regular.svg#BiancoSerif-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
 h1 {
   text-align: center;
   font-family: 'GT Sectra Fine Trial';
@@ -220,7 +232,7 @@ a {
     p {
         font-family: 'Transcript';
         font-size: 24px;
-        letter-spacing: 0.05em;
+        letter-spacing: 0em;
         line-height: 1.26em;
     }
 

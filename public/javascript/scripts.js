@@ -143,8 +143,5 @@ $(document).ready(function () {
   observer.observe();
 });
 
-//Vimeo COntrol
 $(document).ready(function () {
-  var data = $("#440143844").contents();
-  console.log(data);
 });
