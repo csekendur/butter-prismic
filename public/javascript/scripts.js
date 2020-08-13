@@ -139,9 +139,17 @@ function closePopup() {
 
 //Lazy Loading
 $(document).ready(function () {
-  const observer = lozad();
-  observer.observe();
+  var lazyLoadInstance = new LazyLoad({
+    threshold: 0,
+    callback_loaded: callback_element_loaded
+  });
 });
 
-$(document).ready(function () {
-});
+var callback_element_loaded = function (element) {
+  if (element.tagName === "IFRAME") {
+    var player = new Vimeo.Player(element);
+    player.on('play', function () {
+      $(element).addClass("play");
+    });
+  }
+};

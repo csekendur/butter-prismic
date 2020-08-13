@@ -5,14 +5,14 @@ mixin work(workSlices)
         .grid.work-row
           .nine-elevenths.grid__item.push--large--one-eleventh.medium-down--one-whole.work-item.hover-fade
             div(style='padding:55% 0 0 0;position:relative;')
-              iframe(src=`https://player.vimeo.com/video/${slice.primary['video-embed'].video_id}?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&background=1` style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='')
+              iframe(class="lazy" data-src=`https://player.vimeo.com/video/${slice.primary['video-embed'].video_id}?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&background=1` style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='')
             script(src='https://player.vimeo.com/api/player.js')
       when 'single-column'
         .grid.work-row
-           a(href=`/work-subpage/${slice.primary['work-subpage-link'].uid}`)
-             .nine-elevenths.grid__item.push--large--one-eleventh.medium-down--one-whole.work-item.hover-fade
+          .nine-elevenths.grid__item.push--large--one-eleventh.medium-down--one-whole.work-item.hover-fade
+             a(href=`/work-subpage/${slice.primary['work-subpage-link'].uid}`)
                .popup-image
-                 img(class="lozad" data-src=slice.primary.image.url)
+                 img(class="lazy" data-src=slice.primary.image.url src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3C/svg%3E")
                .popup-news-item.down--one-twelfth
                   span= slice.primary.brand[0].text
                   span.popup-image-caption-right= slice.primary.services[0].text
@@ -21,14 +21,14 @@ mixin work(workSlices)
           .four-elevenths.grid__item.push--large--one-eleventh.medium-down--one-whole.work-item.hover-fade
             a(href=`/work-subpage/${slice.primary['work-subpage-link-1'].uid}`)
               .popup-image
-                img(class="lozad" data-src=slice.primary['image-1'].url)
+                img(class="lazy" data-src=slice.primary['image-1'].url src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3C/svg%3E")
               .popup-news-item.down--one-twelfth
                 span= slice.primary['brand-1'][0].text
                 span.popup-image-caption-right= slice.primary['services-1'][0].text
           .four-elevenths.grid__item.push--large--one-eleventh.medium-down--one-whole.work-item.hover-fade
             a(href=`/work-subpage/${slice.primary['work-subpage-link-2'].uid}`)
               .popup-image
-                img(class="lozad" src=slice.primary['image-2'].url)
+                img(class="lazy" data-src=slice.primary['image-2'].url src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3C/svg%3E")
               .popup-news-item.down--one-twelfth
                 span= slice.primary['brand-2'][0].text
                 span.popup-image-caption-right= slice.primary['services-2'][0].text
