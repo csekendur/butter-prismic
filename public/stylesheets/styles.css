@@ -2,7 +2,7 @@
 /*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
 
 @font-face {
-    font-family: 'GT Sectra Fine Trial';
+    font-family: 'GT Sectra Fine';
     src: url("../fonts/GT-Sectra-Fine-Regular.eot");
     src: url("../fonts/GT-Sectra-Fine-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/GT-Sectra-Fine-Regular.woff2") format("woff2"), url("../fonts/GT-Sectra-Fine-Regular.woff") format("woff"), url("../fonts/GT-Sectra-Fine-Regular.ttf") format("truetype"), url("../fonts/GT-Sectra-Fine-Regular.svg#GT-Sectra-Fine-Regular") format("svg");
     font-weight: normal;
@@ -2688,7 +2688,7 @@ template {
 
 h1 {
     text-align: center;
-    font-family: 'GT Sectra Fine Trial';
+    font-family: 'GT Sectra Fine';
     margin: 0;
 }
 
@@ -2874,9 +2874,10 @@ a {
 }
 
     .content p {
-        font-family: 'GT Sectra Fine Trial';
-        font-size: 24px;
-        letter-spacing: 0em;
+        font-family: 'GT Sectra Fine';
+        font-size: 26px;
+        text-transform:lowercase;
+        letter-spacing: 0.02em;
         line-height: 1.26em;
     }
 
@@ -3069,7 +3070,7 @@ a {
     }
 
 .footer-location, .footer-temperature {
-    font-family: 'GT Sectra Fine Trial';
+    font-family: 'GT Sectra Fine';
 }
 
 .footer-contact, .footer-subscribe {
@@ -3270,7 +3271,7 @@ a {
     }
 
 .popup-header-text {
-    font-family: 'GT Sectra Fine Trial';
+    font-family: 'GT Sectra Fine';
 }
 
 @media only screen and (min-width: 1200px) {
@@ -3471,7 +3472,7 @@ a {
 }
 
 .popup-about .description {
-    font-family: 'GT Sectra Fine Trial';
+    font-family: 'GT Sectra Fine';
 }
 
 .popup-about ul {
