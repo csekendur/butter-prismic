@@ -1,4 +1,24 @@
-// Let's set up a function that shows our scroll-to-top button if we scroll beyond the height of the initial window.
+$(document).ready(function () {
+
+  const observer = lozad('.lozad', {
+    loaded: function (element) {
+      if (element.tagName === "IFRAME") {
+        var player = new Vimeo.Player(element);
+        player.on('play', function () {
+          $(element).addClass("play");
+        });
+        player.getPlayed().then(function (played) {
+          if (played.length > 0) {
+            $(element).addClass("play");
+          }
+        }).catch(function (error) {
+        });
+      }
+    }
+  });
+  observer.observe();
+
+});
 
 const scrollFunc = () => {
 
@@ -14,7 +34,7 @@ const scrollFunc = () => {
     }
   };
 
-  window.addEventListener("scroll", scrollFunc);
+window.addEventListener("scroll", scrollFunc);
 
 $(document).ready(function() {
   Weather.setApiKey("186a4121f9d2a98d277362cd4add0547");
@@ -137,19 +157,3 @@ function closePopup() {
 }
 
 
-//Lazy Loading
-$(document).ready(function () {
-  var lazyLoadInstance = new LazyLoad({
-    threshold: 0,
-    callback_loaded: callback_element_loaded
-  });
-});
-
-var callback_element_loaded = function (element) {
-  if (element.tagName === "IFRAME") {
-    var player = new Vimeo.Player(element);
-    player.on('play', function () {
-      $(element).addClass("play");
-    });
-  }
-};

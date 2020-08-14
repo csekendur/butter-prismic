@@ -9,12 +9,12 @@ block body
       div(class="grid work-item")
         div(class="grid__item medium-down--one-whole")
           div(class="popup-image")
-            img(class="lazy" data-src=document.data['hero-image'].url src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3C/svg%3E")
+            img(class="lozad" data-toggle-class="loaded" src=document.data['hero-image'].url)
     else if document.data['hero-video']['video_id']
       div(class="grid work-item")
         div(class="grid__item medium-down--one-whole")
           div(style='padding:55% 0 0 0;position:relative;')
-            iframe(class="lazy" data-src=`https://player.vimeo.com/video/${document.data['hero-video']['video_id']}?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&background=1` style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='')
+            iframe(class="lozad" data-toggle-class="loaded" src=`https://player.vimeo.com/video/${document.data['hero-video']['video_id']}?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&background=1` style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='')
           script(src='https://player.vimeo.com/api/player.js')
     .grid.work-item
       .three-tenths.grid__item.push--large--one-twentieth.medium-down--one-whole
@@ -33,7 +33,7 @@ block body
           div(class="grid work-item")
             div(class="grid__item medium-down--one-whole")
               div(class="popup-image")
-                img(class="lazy" data-src=slice.primary["single-image"].url src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3C/svg%3E")
+                img(class="lozad" data-toggle-class="loaded" src=slice.primary["single-image"].url)
         when 'paragraph'
           .grid.work-item
             .work-statement.four-tenths.push--large--three-tenths.medium-down--one-whole.grid__item !{PrismicDOM.RichText.asHtml(slice.primary["text-paragraph"])}
@@ -41,16 +41,16 @@ block body
           div(class="grid work-item")
             div(class="grid__item medium-down--one-whole")
               div(style='padding:55% 0 0 0;position:relative;')
-                iframe(class="lazy" data-src=`https://player.vimeo.com/video/${slice.primary['video-embed'].video_id}?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&background=1` style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='')
+                iframe(class="lozad" data-toggle-class="loaded" src=`https://player.vimeo.com/video/${slice.primary['video-embed'].video_id}?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&background=1` style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='')
               script(src='https://player.vimeo.com/api/player.js')
         when 'two-photos'
           .grid
             .five-elevenths.grid__item.medium-down.work-item
               .popup-image
-                img(class="lazy" data-src=slice.primary['image-1'].url src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3C/svg%3E")
+                img(class="lozad" data-toggle-class="loaded" src=slice.primary['image-1'].url)
             .five-elevenths.grid__item.push--one-eleventh.medium-down.work-item
               .popup-image
-                img(class="lazy" data-src=slice.primary['image-2'].url src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 11 14'%3E%3C/svg%3E")
+                img(class="lozad" data-toggle-class="loaded" src=slice.primary['image-2'].url)
         when 'nextworkpage'
             div(class="nextworkpage")
                 h5= document.data["work-subpage-title"][0].text
