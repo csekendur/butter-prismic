@@ -105,7 +105,7 @@ img {
     }
 
     &:not(.initial) {
-        transition: opacity 2s;
+        transition: opacity 1s;
     }
 
     &.lazy {
@@ -124,7 +124,7 @@ iframe {
     }
 
     &:not(.initial) {
-        transition: opacity 2s;
+        transition: opacity 1s;
     }
 
     &.lazy {
