@@ -38,7 +38,7 @@ block body
             div(class="grid text-row lozad lazyload" data-toggle-class="loaded")
               .two-tenths.grid__item.medium-down--one-whole.push--large--one-twentieth
                 h1 #{slice.primary.title[0].text}
-                p.description #{slice.primary.description[0].text}
+                p.description !{PrismicDOM.RichText.asHtml(slice.primary.description)}
               .three-elevenths.grid__item.push--large--one-tenth.medium-down--one-whole
                 | !{PrismicDOM.RichText.asHtml(slice.primary['column-1'])}
               .three-elevenths.grid__item.push--large--one-twentieth.medium-down--one-whole
@@ -47,7 +47,7 @@ block body
             div(class="grid text-row lozad lazyload" data-toggle-class="loaded")
               .two-tenths.grid__item.medium-down--one-whole.push--large--one-twentieth
                 h1 #{slice.primary.title[0].text}
-                p.description #{slice.primary.description[0].text}
+                p.description !{PrismicDOM.RichText.asHtml(slice.primary.description)}
               .two-elevenths.grid__item.push--large--one-tenth.medium-down--one-whole
                 | !{PrismicDOM.RichText.asHtml(slice.primary['column-1'])}
               .two-elevenths.grid__item.push--large--one-twentieth.medium-down--one-whole
