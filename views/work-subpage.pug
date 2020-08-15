@@ -6,17 +6,17 @@ block body
       h3= document.data["work-subpage-title"][0].text
       include html/work-page-link.html
     if document.data['hero-image'].url
-      div(class="grid work-item")
+      div(class="grid work-item lozad lazyload" data-toggle-class="loaded")
         div(class="grid__item medium-down--one-whole")
           div(class="popup-image")
             img(class="lozad" data-toggle-class="loaded" src=document.data['hero-image'].url)
     else if document.data['hero-video']['video_id']
-      div(class="grid work-item")
+      div(class="grid work-item lozad lazyload" data-toggle-class="loaded")
         div(class="grid__item medium-down--one-whole")
           div(style='padding:55% 0 0 0;position:relative;')
             iframe(class="lozad" data-toggle-class="loaded" src=`https://player.vimeo.com/video/${document.data['hero-video']['video_id']}?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&background=1` style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='')
           script(src='https://player.vimeo.com/api/player.js')
-    .grid.work-item
+    div(class="grid work-item lozad lazyload" data-toggle-class="loaded")
       .three-tenths.grid__item.push--large--one-twentieth.medium-down--one-whole
         each creditSection in document.data["project-credits"]
           .credit-section
@@ -30,21 +30,21 @@ block body
     each slice in document.data.body
       case slice.slice_type
         when 'single-photo'
-          div(class="grid work-item")
+          div(class="grid work-item lozad lazyload" data-toggle-class="loaded")
             div(class="grid__item medium-down--one-whole")
               div(class="popup-image")
                 img(class="lozad" data-toggle-class="loaded" src=slice.primary["single-image"].url)
         when 'paragraph'
-          .grid.work-item
+          div(class="grid work-item lozad lazyload" data-toggle-class="loaded")
             .work-statement.four-tenths.push--large--three-tenths.medium-down--one-whole.grid__item !{PrismicDOM.RichText.asHtml(slice.primary["text-paragraph"])}
         when 'video'
-          div(class="grid work-item")
+          div(class="grid work-item lozad lazyload" data-toggle-class="loaded")
             div(class="grid__item medium-down--one-whole")
               div(style='padding:55% 0 0 0;position:relative;')
                 iframe(class="lozad" data-toggle-class="loaded" src=`https://player.vimeo.com/video/${slice.primary['video-embed'].video_id}?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&background=1` style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen' webkitallowfullscreen='' mozallowfullscreen='' allowfullscreen='')
               script(src='https://player.vimeo.com/api/player.js')
         when 'two-photos'
-          .grid
+          div(class="grid lozad lazyload" data-toggle-class="loaded")
             .five-elevenths.grid__item.medium-down.work-item
               .popup-image
                 img(class="lozad" data-toggle-class="loaded" src=slice.primary['image-1'].url)
