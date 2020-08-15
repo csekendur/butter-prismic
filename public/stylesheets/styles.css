@@ -105,6 +105,21 @@ sup {
     top: -0.5em;
 }
 
+/*Div Lazy Load CSS*/
+div:not(.initial) {
+    transition: opacity 1s;
+}
+
+div.lazyload {
+    opacity: 0;
+}
+
+div.initial,
+div.loaded,
+div.error {
+    opacity: 1;
+}
+
 img {
     border-style: none;
 }

@@ -6,7 +6,7 @@ block body
     .popup-news
       each newsItem in newsItems
         .grid.news-row
-          .grid__item.one-third.medium-down--one-whole
+          div(class="grid__item one-third medium-down--one-whole lozad lazyload" data-toggle-class="loaded")
             .popup-news-item
               h3= newsItem.data.title[0].text
               p !{PrismicDOM.RichText.asHtml(newsItem.data["news-text"])}

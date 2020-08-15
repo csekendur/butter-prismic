@@ -156,4 +156,6 @@ function closePopup() {
   window.location.hash = "";
 }
 
-
+$(window).on("beforeunload", function () {
+  $(".lozad").removeClass("loaded");
+});
