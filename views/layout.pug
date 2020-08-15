@@ -10,10 +10,10 @@ body
   include body-scripts.html
   div(class="page")
     div(class="wrapper")
-      div(class="title")
+      div(class="title lozad lazyload" data-toggle-class="loaded")
         a(href="/")
           include header-svg.html
-      div(class="dots-container")
+      div(class="dots-container lozad lazyload" data-toggle-class="loaded")
         block body
       include footer.html
   include scripts.html
