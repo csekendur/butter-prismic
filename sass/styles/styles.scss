@@ -845,6 +845,10 @@ iframe {
 
     .description {
         font-family: 'GT Sectra Fine';
+
+        p {
+            font-family: 'GT Sectra Fine';
+        }
     }
 
     ul {
@@ -863,9 +867,8 @@ iframe {
 
         li {
             font-family: 'Transcript';
-            font-size: 20px;
+            font-size: 18px;
             line-height: 1.75em;
-            text-transform: lowercase;
         }
     }
 }

@@ -3486,7 +3486,7 @@ a {
         }
 }
 
-.popup-about .description {
+.popup-about .description, .popup-about .description p {
     font-family: 'GT Sectra Fine';
 }
 
@@ -3509,9 +3509,8 @@ a {
 
 .popup-about ul li {
     font-family: 'Transcript';
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.75em;
-    text-transform: lowercase;
 }
 
 .popup-work-subpages h3 {
