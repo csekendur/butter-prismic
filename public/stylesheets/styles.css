@@ -63,8 +63,15 @@ pre {
 }
 
 a {
+    color: #DA0006;
     background-color: transparent;
+    text-decoration: none;
+    transition: all 0.3s;
 }
+
+    a:hover {
+        opacity: 0.7;
+    }
 
 abbr[title] {
     border-bottom: none;
@@ -123,17 +130,20 @@ div.error {
 img {
     border-style: none;
 }
-/*Image Lazy Load CSS*/
-    
+    /*Image Lazy Load CSS*/
+
     img:not([src]) {
         visibility: hidden;
     }
+
     img:not(.initial) {
         transition: opacity 1s;
     }
+
     img.lozad {
         opacity: 0;
     }
+
     img.initial,
     img.loaded,
     img.error {
@@ -2720,15 +2730,6 @@ h2 {
     height: 100vh;
 }
 
-a {
-    color: inherit;
-    transition: all 0.3s;
-}
-
-    a:hover {
-        opacity: 0.7;
-    }
-
 .float-right {
     float: right;
 }
@@ -2891,7 +2892,7 @@ a {
     .content p {
         font-family: 'GT Sectra Fine';
         font-size: 26px;
-        text-transform:lowercase;
+        text-transform: lowercase;
         letter-spacing: 0.02em;
         line-height: 1.26em;
     }
@@ -3718,10 +3719,6 @@ a {
 
 .uppercase {
     text-transform: uppercase;
-}
-
-a {
-    text-decoration: none;
 }
 
 .text a {

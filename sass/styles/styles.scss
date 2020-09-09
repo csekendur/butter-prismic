@@ -54,7 +54,9 @@ h2 {
 }
 
 a {
-    color: inherit;
+    color: #DA0006;
+    background-color: transparent;
+    text-decoration: none;
     transition: all 0.3s;
 
     &:hover {
@@ -1098,10 +1100,6 @@ iframe {
 
 .uppercase {
     text-transform: uppercase;
-}
-
-a {
-    text-decoration: none;
 }
 
 .text a {
