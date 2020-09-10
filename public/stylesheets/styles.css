@@ -63,14 +63,14 @@ pre {
 }
 
 a {
-    color: #DA0006;
+    color: inherit;
     background-color: transparent;
     text-decoration: none;
     transition: all 0.3s;
 }
 
     a:hover {
-        opacity: 0.7;
+        opacity: 0.5;
     }
 
 abbr[title] {

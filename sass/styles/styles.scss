@@ -54,13 +54,13 @@ h2 {
 }
 
 a {
-    color: #DA0006;
+    color: inherit;
     background-color: transparent;
     text-decoration: none;
     transition: all 0.3s;
 
     &:hover {
-        opacity: 0.7;
+        opacity: 0.5;
     }
 }
 
