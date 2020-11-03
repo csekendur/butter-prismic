@@ -3155,8 +3155,8 @@ h2 {
     .footer-email form input[type="email"] {
         outline: none;
         border: 0;
-        width: 200px;
-        flex: 1;
+        padding-left:0;
+        width: 100%;
     }
 
         .footer-email form input[type="email"]::-webkit-input-placeholder {
@@ -3180,6 +3180,8 @@ h2 {
         border: 0;
         cursor: pointer;
         outline: none;
+        padding-right: 0;
+        float: right;
     }
 
 .footer-email input {
