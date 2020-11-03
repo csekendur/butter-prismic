@@ -148,6 +148,7 @@ iframe {
 
         .popup-news-item {
             padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
 }
@@ -751,6 +752,10 @@ iframe {
     }
 }
 
+.popup-image-brand-left {
+    float: left;
+}
+
 .popup-image-caption-right {
     float: right;
 }
@@ -1192,5 +1197,15 @@ iframe {
         color: #444;
         font-size: 1em;
         clip: auto !important;
+    }
+}
+
+@media (max-width: 599px) {
+    .popup-image-brand-left {
+        float: none;
+    }
+
+    .popup-image-caption-right {
+        float: none;
     }
 }
