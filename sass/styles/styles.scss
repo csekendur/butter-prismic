@@ -844,7 +844,7 @@ iframe {
 
     .grid__item {
         @include media-query($medium-down) {
-            padding-bottom: 30px;
+            padding-bottom: 10px;
 
             &:last-of-type {
                 padding-bottom: 0;

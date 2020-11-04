@@ -3486,7 +3486,7 @@ h2 {
 
 @media only screen and (max-width: 1199px) {
     .popup-about .grid__item {
-        padding-bottom: 30px;
+        padding-bottom: 10px;
     }
 
         .popup-about .grid__item:last-of-type {
