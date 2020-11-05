@@ -3,6 +3,9 @@ $(document).ready(function () {
   const observer = lozad('.lozad', {
     loaded: function (element) {
       if (element.tagName === "IFRAME") {
+
+        console.log(element);
+
         var player = new Vimeo.Player(element);
         player.on('play', function () {
           $(element).addClass("play");
@@ -12,7 +15,11 @@ $(document).ready(function () {
             $(element).addClass("play");
           }
         }).catch(function (error) {
+          console.log(error);
         });
+
+        setTimeout(function () { console.log(player); player.play(); }, 2000);
+
       }
     }
   });
