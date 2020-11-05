@@ -3155,7 +3155,7 @@ h2 {
     .footer-email form input[type="email"] {
         outline: none;
         border: 0;
-        padding-left:0;
+        padding-left: 0;
         width: 100%;
     }
 
@@ -3829,5 +3829,9 @@ h2 {
 
     .popup-image-caption-right {
         float: none;
+    }
+
+    .about-video-container {
+        padding: 56% 0 0 0 !important;
     }
 }
