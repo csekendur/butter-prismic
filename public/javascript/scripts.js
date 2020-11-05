@@ -4,12 +4,11 @@ $(document).ready(function () {
     loaded: function (element) {
       if (element.tagName === "IFRAME") {
 
-        console.log(element);
-
         var player = new Vimeo.Player(element);
         player.on('play', function () {
           $(element).addClass("play");
         });
+
         player.getPlayed().then(function (played) {
           if (played.length > 0) {
             $(element).addClass("play");
@@ -18,7 +17,10 @@ $(document).ready(function () {
           console.log(error);
         });
 
-        setTimeout(function () { console.log(player); player.play(); }, 2000);
+        setTimeout(function () {
+          player.play();
+          $(element).addClass("play");
+        }, 3000);
 
       }
     }
