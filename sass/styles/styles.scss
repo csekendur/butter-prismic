@@ -844,7 +844,7 @@ iframe {
 
     .grid__item {
         @include media-query($medium-down) {
-            padding-bottom: 10px;
+            padding-bottom: 30px;
 
             &:last-of-type {
                 padding-bottom: 0;
@@ -1203,6 +1203,11 @@ iframe {
 }
 
 @media (max-width: 599px) {
+    .popup-about .text-row {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+
     .popup-image-brand-left {
         float: none;
     }
