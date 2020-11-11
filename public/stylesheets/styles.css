@@ -3839,4 +3839,12 @@ h2 {
     .about-video-container {
         padding: 56% 0 0 0 !important;
     }
+
+    .popup-about .grid__item {
+        padding-bottom: 0px;
+    }
+
+        .popup-about .grid__item.three-column-container {
+            padding-top: 30px;
+        }
 }
