@@ -50,18 +50,18 @@ block body
               .two-tenths.grid__item.medium-down--one-whole.push--large--one-twentieth
                 h1 #{slice.primary.title[0].text}
                 div.description !{PrismicDOM.RichText.asHtml(slice.primary.description)}
-              .three-elevenths.grid__item.push--large--one-tenth.medium-down--one-whole
+              .three-elevenths.grid__item.push--large--one-tenth.medium-down--one-whole.p-t-m-30
                 | !{PrismicDOM.RichText.asHtml(slice.primary['column-1'])}
-              .three-elevenths.grid__item.push--large--one-twentieth.medium-down--one-whole
+              .three-elevenths.grid__item.push--large--one-twentieth.medium-down--one-whole.p-t-m-30
                 | !{PrismicDOM.RichText.asHtml(slice.primary['column-2'])}
           when 'three-columns'
             div(class="grid text-row lozad lazyload" data-toggle-class="loaded")
               .two-tenths.grid__item.medium-down--one-whole.push--large--one-twentieth
                 h1 #{slice.primary.title[0].text}
                 div.description !{PrismicDOM.RichText.asHtml(slice.primary.description)}
-              .two-elevenths.grid__item.push--large--one-tenth.medium-down--one-whole.three-column-container
+              .two-elevenths.grid__item.push--large--one-tenth.medium-down--one-whole.p-t-m-30
                 | !{PrismicDOM.RichText.asHtml(slice.primary['column-1'])}
-              .two-elevenths.grid__item.push--large--one-twentieth.medium-down--one-whole.three-column-container
+              .two-elevenths.grid__item.push--large--one-twentieth.medium-down--one-whole.p-t-m-30
                 | !{PrismicDOM.RichText.asHtml(slice.primary['column-2'])}
-              .two-elevenths.grid__item.push--large--one-twentieth.medium-down--one-whole.three-column-container
+              .two-elevenths.grid__item.push--large--one-twentieth.medium-down--one-whole.p-t-m-30
                 | !{PrismicDOM.RichText.asHtml(slice.primary['column-3'])}

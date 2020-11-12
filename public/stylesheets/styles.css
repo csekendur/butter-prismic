@@ -112,6 +112,10 @@ sup {
     top: -0.5em;
 }
 
+.p-t-30 {
+    padding-top: 30px;
+}
+
 /*Div Lazy Load CSS*/
 div:not(.initial) {
     transition: opacity 1s;
@@ -3823,6 +3827,10 @@ h2 {
     }
 
 @media (max-width: 599px) {
+    .p-t-m-30 {
+        padding-top: 30px;
+    }
+
     .popup-about .text-row {
         margin-bottom: 30px;
         padding-bottom: 30px;
@@ -3843,8 +3851,4 @@ h2 {
     .popup-about .grid__item {
         padding-bottom: 0px;
     }
-
-        .popup-about .grid__item.three-column-container {
-            padding-top: 30px;
-        }
 }

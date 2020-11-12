@@ -64,6 +64,10 @@ a {
     }
 }
 
+.p-t-30 {
+    padding-top: 30px;
+}
+
 .float-right {
     float: right;
 }
@@ -1203,6 +1207,10 @@ iframe {
 }
 
 @media (max-width: 599px) {
+    .p-t-m-30 {
+        padding-top: 30px;
+    }
+
     .popup-about .text-row {
         margin-bottom: 30px;
         padding-bottom: 30px;
