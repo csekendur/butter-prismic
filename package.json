@@ -40,8 +40,8 @@
     "nodemon": "^1.17.3"
   },
   "engines": {
-    "node": ">=4.8.1",
-    "npm": ">=2.15.11"
+    "node": "14.17.4",
+    "npm": "6.14.14"
   },
   "browserslist": [
     "defaults"
