@@ -1,6 +1,8 @@
-doctype html(lang='en')
+doctype html
+
 head
-  include header.html
+  include header.pug
+  
   // Required for Previews and Experiments
   script
     = ctx?"window.prismic = { endpoint: '" + ctx.endpoint + "' };":""
