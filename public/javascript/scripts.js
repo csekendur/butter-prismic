@@ -1,3 +1,25 @@
+const scrollFunc = () => {
+
+  const scrollToTopButton = document.getElementById('js-top');
+  // Get the current scroll value
+  let y = window.scrollY;
+
+  // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
+  if (y > 0) {
+    scrollToTopButton.className = "top-link show";
+  } else {
+    scrollToTopButton.className = "top-link hide";
+  }
+};
+
+window.addEventListener("scroll", scrollFunc);
+
+document.addEventListener("touchstart", function () { }, true);
+
+$(window).on("beforeunload", function () {
+  $(".lozad").removeClass("loaded");
+});
+
 $(document).ready(function () {
 
   const observer = lozad('.lozad', {
@@ -29,22 +51,6 @@ $(document).ready(function () {
 
 });
 
-const scrollFunc = () => {
-
-    const scrollToTopButton = document.getElementById('js-top');
-    // Get the current scroll value
-    let y = window.scrollY;
-    
-    // If the scroll value is greater than the window height, let's add a class to the scroll-to-top button to show it!
-    if (y > 0) {
-      scrollToTopButton.className = "top-link show";
-    } else {
-      scrollToTopButton.className = "top-link hide";
-    }
-  };
-
-window.addEventListener("scroll", scrollFunc);
-
 $(document).ready(function() {
   Weather.setApiKey("186a4121f9d2a98d277362cd4add0547");
   Weather.getCurrent("Queens", function(current) {
@@ -52,9 +58,8 @@ $(document).ready(function() {
     $(".weather").html(Math.round(w) + "&#176; F");
   });
 
-  $("#js-top").on("click", function() {
-    $("body").animate( { scrollTop:0, scrollLeft:0 }, 1000 );
-    return false;
+  $("#js-top").on("click", function () {
+    $('html, body').animate({ scrollTop: '0px' }, 1000);
   });
 
   $(".popup-slider").on('beforeChange', scrollToTop);
@@ -134,8 +139,6 @@ $(document).ready(function() {
   });
 });
 
-document.addEventListener("touchstart", function(){}, true);
-
 function scrollTo(height) {
   document.body.scrollTop = document.documentElement.scrollTop = height;
 }
@@ -164,7 +167,3 @@ function closePopup() {
   $(".popup").addClass("hidden");
   window.location.hash = "";
 }
-
-$(window).on("beforeunload", function () {
-  $(".lozad").removeClass("loaded");
-});
