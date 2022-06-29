@@ -194,18 +194,24 @@ app.route('/about.html').get(function(req, res) {
 
 function GetMetaTags(meta_data_result) {
   var meta_data = {};
+
+  meta_data.meta_title = "Butter Studio";
+  meta_data.meta_description = "Changing culture through design. A brand and digital design studio led by Cari Sekendur.";
+  meta_data.meta_image_url = "https://butterstudio.co/images/butter-meta.jpg";
+
   if (meta_data_result != null) {
     meta_data.meta_title = PrismicDOM.RichText.asText(meta_data_result.data['meta-title']);
     meta_data.meta_description = PrismicDOM.RichText.asText(meta_data_result.data['meta-description']);
     meta_data.meta_image_url = meta_data_result.data['meta-image'].url;
-  } else {
-    meta_data.meta_title = "";
-    meta_data.meta_description = "";
-    meta_data.meta_image_url = "";
+
+    meta_data.meta_title = meta_data.meta_title != "" ? meta_data.meta_title : "Butter Studio";
+    meta_data.meta_description = meta_data.meta_description != "" ? meta_data.meta_description : "Changing culture through design. A brand and digital design studio led by Cari Sekendur.";
+    meta_data.meta_image_url = meta_data.meta_image_url === undefined ? "https://butterstudio.co/images/butter-meta.jpg" : meta_data.meta_image_url;
   }
 
   return meta_data;
 }
+
 /*
  * Preconfigured prismic preview
  */
