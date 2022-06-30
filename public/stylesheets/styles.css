@@ -484,6 +484,16 @@ template {
     width: 91.666%;
 }
 
+.video-container {
+    opacity: 1;
+    transition: opacity 0.3s !important;
+    -webkit-transition: opacity 0.3s !important;
+}
+
+    .video-container:hover {
+        opacity: 0.5;
+    }
+
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .small--one-whole {
         width: 100%;
@@ -3523,6 +3533,7 @@ h2 {
     font-family: 'Transcript';
     font-size: 18px;
     line-height: 1.75em;
+    margin-bottom: 15px;
 }
 
 .popup-work-subpages h3 {
