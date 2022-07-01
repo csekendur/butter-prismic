@@ -11,7 +11,7 @@ mixin work(workSlices)
         div(class="grid work-row lozad lazyload" data-toggle-class="loaded")
           .grid__item.medium-down--one-whole
              if slice.primary['image'].url
-                a(href=`/work-subpage/${slice.primary['work-subpage-link'].uid}`)
+                a(class="image-container" href=`/work-subpage/${slice.primary['work-subpage-link'].uid}`)
                     .popup-image
                         img(class="lozad" data-toggle-class="loaded" src=slice.primary.image.url)
                     .popup-news-item.down--one-twelfth
@@ -33,7 +33,7 @@ mixin work(workSlices)
       when 'two-columns'
         div(class="grid work-row lozad lazyload" data-toggle-class="loaded")
           .five-elevenths.grid__item.medium-down.work-item
-            a(href=`/work-subpage/${slice.primary['work-subpage-link-1'].uid}`)
+            a(class="image-container" href=`/work-subpage/${slice.primary['work-subpage-link-1'].uid}`)
               .popup-image
                 img(class="lozad" data-toggle-class="loaded" src=slice.primary['image-1'].url)
               .popup-news-item.down--one-twelfth
@@ -42,7 +42,7 @@ mixin work(workSlices)
                 .popup-image-caption-right
                     span= slice.primary['services-1'][0].text
           .five-elevenths.grid__item.push--one-eleventh.medium-down.work-item
-            a(href=`/work-subpage/${slice.primary['work-subpage-link-2'].uid}`)
+            a(class="image-container" href=`/work-subpage/${slice.primary['work-subpage-link-2'].uid}`)
               .popup-image
                 img(class="lozad" data-toggle-class="loaded" src=slice.primary['image-2'].url)
               .popup-news-item.down--one-twelfth

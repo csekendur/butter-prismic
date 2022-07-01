@@ -484,15 +484,21 @@ template {
     width: 91.666%;
 }
 
-.video-container {
+a.image-container:hover {
     opacity: 1;
+}
+
+a.image-container .popup-news-item:hover {
+    opacity: 0.5;
     transition: opacity 0.3s !important;
     -webkit-transition: opacity 0.3s !important;
 }
 
-    .video-container:hover {
-        opacity: 0.5;
-    }
+.video-container {
+    opacity: 1;
+    /*transition: opacity 0.3s !important;
+    -webkit-transition: opacity 0.3s !important;*/
+}
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
     .small--one-whole {
