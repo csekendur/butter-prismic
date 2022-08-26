@@ -21,34 +21,36 @@ $(window).on("beforeunload", function () {
 });
 
 $(document).ready(function () {
-
   const observer = lozad('.lozad', {
     loaded: function (element) {
-      if (element.tagName === "IFRAME") {
 
-        var player = new Vimeo.Player(element);
-        player.on('play', function () {
-          $(element).addClass("play");
-        });
+      if (element.tagName === "IFRAME") {
+        const player = new Vimeo.Player(element);
+        console.log("player -> ", player);
+
+        //player.on('play', function () {
+        //  $(element).addClass("play");
+        //  console.log("PLAYED ON");
+        //});
 
         player.getPlayed().then(function (played) {
           if (played.length > 0) {
             $(element).addClass("play");
+            console.log("PLAYED THEN");
           }
         }).catch(function (error) {
-          console.log(error);
+          console.log("player.getPlayed() -> ",error);
         });
 
         setTimeout(function () {
           player.play();
           $(element).addClass("play");
-        }, 3000);
-
+          console.log("PLAYED TIMEOUT");
+        }, 500);
       }
     }
   });
   observer.observe();
-
 });
 
 $(document).ready(function() {

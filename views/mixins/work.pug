@@ -6,7 +6,6 @@ mixin work(workSlices)
           .nine-elevenths.grid__item.push--large--one-eleventh.medium-down--one-whole.work-item.hover-fade
             div(class="video-container" style='padding:57% 0 0 0;position:relative;')
               iframe(class="lozad" data-toggle-class="loaded" src=`https://player.vimeo.com/video/${slice.primary['video-embed'].video_id}?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&background=1` style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen')
-            script(src='https://player.vimeo.com/api/player.js')
       when 'single-column'
         div(class="grid work-row lozad lazyload" data-toggle-class="loaded")
           .grid__item.medium-down--one-whole
@@ -23,7 +22,6 @@ mixin work(workSlices)
                 div(class="video-container" style='padding:57% 0 0 0;position:relative;')
                     iframe(class="lozad" data-toggle-class="loaded" src=`https://player.vimeo.com/video/${slice.primary['video-embed'].video_id}?autoplay=1&loop=1&autopause=0&title=0&byline=0&portrait=0&background=1` style='position:absolute;top:0;left:0;width:100%;height:100%;' frameborder='0' allow='autoplay; fullscreen')
                     a(href=`/${slice.primary['work-subpage-link'].type}/${slice.primary['work-subpage-link'].uid}` style='position:absolute;top:0;left:0;width:100%;height:100%;')
-                script(src='https://player.vimeo.com/api/player.js')
                 a(href=`/work-subpage/${slice.primary['work-subpage-link'].uid}`)
                     .popup-news-item.down--one-twelfth
                         .popup-image-brand-left
