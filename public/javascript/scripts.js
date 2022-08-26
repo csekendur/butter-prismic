@@ -26,28 +26,25 @@ $(document).ready(function () {
 
       if (element.tagName === "IFRAME") {
         const player = new Vimeo.Player(element);
-        console.log("player -> ", player);
-
-        //player.on('play', function () {
-        //  $(element).addClass("play");
-        //  console.log("PLAYED ON");
-        //});
 
         player.getPlayed().then(function (played) {
           if (played.length > 0) {
             $(element).addClass("play");
-            console.log("PLAYED THEN");
           }
         }).catch(function (error) {
-          console.log("player.getPlayed() -> ",error);
+          console.log("player.getPlayed() -> ", error);
+        });
+
+        player.on('play', function () {
+          $(element).addClass("play");
         });
 
         setTimeout(function () {
-          player.play();
           $(element).addClass("play");
-          console.log("PLAYED TIMEOUT");
-        }, 500);
+          player.play();
+        }, 1000);
       }
+
     }
   });
   observer.observe();
