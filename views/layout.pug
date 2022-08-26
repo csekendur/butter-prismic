@@ -3,10 +3,10 @@ doctype html
 head
   include header.pug
   
-  // Required for Previews and Experiments
-  script
-    = ctx?"window.prismic = { endpoint: '" + ctx.endpoint + "' };":""
-  script(src="//static.cdn.prismic.io/prismic.min.js")
+  //Required for Previews and Experiments
+  //script
+    //= ctx?"window.prismic = { endpoint: '" + ctx.endpoint + "' };":""
+  //script(src="//static.cdn.prismic.io/prismic.min.js")
 
 body
   include body-scripts.html
